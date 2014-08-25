@@ -13,8 +13,8 @@ $ADMIN_PASS = "shab1234"
 class Test::Unit::TestCase
 
   def setup
-    #@driver = Selenium::WebDriver.for :chrome
-     @driver = Selenium::WebDriver.for :firefox
+    @driver = Selenium::WebDriver.for :chrome
+     #@driver = Selenium::WebDriver.for :firefox
     @base_url = "https://login.xero.com/"
     @driver.manage.timeouts.implicit_wait = 30
     @verification_errors = []
